@@ -1,18 +1,17 @@
-int a = 0;
-int b = 50;
-int c = 100;
+int t = 0;
 
 void setup() {
     Serial.begin(38400);
 }
 
 void loop() {
+    double a = sin(t / 100.0);
+    double b = cos(t / 110.0);
+    double c = sin(t / 50.0) + 1.0;
     Serial.print("a:"); Serial.print(a); Serial.print(", ");
     Serial.print("b:"); Serial.print(b); Serial.print(", ");
     Serial.print("c:"); Serial.print(c); Serial.print(", ");
     Serial.println();
-    a = (a + 1) % 100 ;
-    b = (b + 2) % 110 ;
-    c = (c + 1) % 150 ;
-    delay(100);
+    t++;
+    delay(40);
 }
