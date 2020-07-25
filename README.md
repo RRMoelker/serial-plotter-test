@@ -1,4 +1,4 @@
 # serial-plotter-test
 Arduino serial plotter example
 
-![Serial monitor example gif](serial-monitor-labeled-example.gif)
+![Serial plotter example gif](serial-plotter-labeled-example.gif)
